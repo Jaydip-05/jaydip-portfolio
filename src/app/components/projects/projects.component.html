@@ -1,0 +1,31 @@
+<section class="projects-section" id="projects">
+  <div class="container">
+
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="underline"></div>
+    <p class="section-subtitle">A showcase of my recent work, blending design and functionality.</p>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" *ngFor="let project of projects">
+        <div class="glass-card project-card h-100 p-0 overflow-hidden">
+          <div class="project-img-wrapper position-relative">
+            <img [src]="project.image" [alt]="project.title" class="img-fluid" />
+            <div class="project-overlay d-flex align-items-center justify-content-center">
+              <a href="#" class="btn btn-light rounded-pill px-4 fw-bold">Live Demo</a>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <h3 class="h5 fw-bold mb-2">{{ project.title }}</h3>
+            <p class="text-muted small mb-3">{{ project.description }}</p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-light text-dark small" *ngFor="let tech of project.technologies">{{ tech }}</span>
+            </div>
+            <a href="#" class="text-primary text-decoration-none fw-bold small">View Case Study →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

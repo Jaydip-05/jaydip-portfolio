@@ -1,0 +1,18 @@
+/* FOOTER */
+.footer {
+  background: #06121f;
+  padding: 20px;
+  color: #9bb3c9;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  margin-left: 15px;
+  color: #9bb3c9;
+  text-decoration: none;
+}

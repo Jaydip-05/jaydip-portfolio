@@ -1,0 +1,36 @@
+<section class="skills-section" id="skills">
+  <div class="container">
+
+    <h2 class="section-title">My Technical Expertise</h2>
+    <div class="underline"></div>
+    <p class="section-subtitle">A comprehensive toolkit of technologies I use to bring ideas to life.</p>
+
+    <div class="row g-4">
+      @for (category of skillCategories; track category.title) {
+        <div class="col-lg-4 col-md-6">
+          <div class="glass-card h-100">
+            <div class="icon-box mb-4">
+              <i class="fs-2 text-primary">{{ category.icon }}</i>
+            </div>
+            <h3 class="h4 mb-3">{{ category.title }}</h3>
+            <p class="text-muted small mb-4">{{ category.description }}</p>
+            
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              @for (tag of category.tags; track tag) {
+                <span class="skill-tag">{{ tag }}</span>
+              }
+            </div>
+
+            <hr class="opacity-10 mb-4">
+            
+            <ul class="skill-list list-unstyled">
+              @for (detail of category.details; track detail) {
+                <li><i class="bi bi-check2-circle text-primary me-2"></i> {{ detail }}</li>
+              }
+            </ul>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

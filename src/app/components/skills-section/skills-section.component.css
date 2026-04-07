@@ -1,0 +1,38 @@
+.skills-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.glass-card:hover .icon-box {
+  background: var(--primary-color);
+}
+
+.glass-card:hover .icon-box i {
+  color: white !important;
+}
+
+.skill-tag {
+  background: var(--border-color);
+  color: var(--text-main);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.skill-tag:hover {
+  background: var(--primary-color);
+  color: white;
+}

@@ -1,0 +1,22 @@
+.education-section {
+  position: relative;
+}
+
+.max-w-800 {
+  max-width: 800px;
+}
+
+.education-item {
+  transition: var(--transition);
+}
+
+.education-item:hover {
+  border-color: var(--primary-color);
+  transform: translateX(10px);
+}
+
+@media (max-width: 767px) {
+  .education-item:hover {
+    transform: translateY(-5px);
+  }
+}
