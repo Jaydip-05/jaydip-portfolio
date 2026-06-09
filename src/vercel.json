@@ -1,0 +1,9 @@
+{
+    "outputDirectory": "dist/jaydip-portfolio",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
