@@ -23,7 +23,7 @@ export class SkillsSectionComponent {
       title: 'Backend Architecture',
       icon: '🗄️',
       description: 'Designing robust server-side logic and scalable database structures.',
-      tags: ['C#', '.NET Core', 'PostgreSQL', 'MySQL', 'Python', 'RESTful APIs'],
+      tags: ['C#', '.NET Core','Entity Framework','REST APIs', 'PostgreSQL', 'MySQL', 'Python', 'RESTful APIs'],
       details: [
         'Microservices Architecture',
         'Database Normalization & Querying',
