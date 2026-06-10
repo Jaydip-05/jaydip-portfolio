@@ -1,5 +1,5 @@
 {
-    "outputDirectory": "dist/jaydip-portfolio",
+    "outputDirectory": "dist/jaydip-portfolio/browser",
     "rewrites": [
         {
             "source": "/(.*)",
